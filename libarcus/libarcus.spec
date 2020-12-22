@@ -1,6 +1,6 @@
 Name:           libarcus
-Version:        4.7.1
-Release:        2%{?dist}
+Version:        4.8.0
+Release:        1%{?dist}
 Summary:        Communication library between internal components for Ultimaker software
 License:        LGPLv3+
 URL:            https://github.com/Ultimaker/libArcus
@@ -89,6 +89,9 @@ sed -i 's/Python3_SITELIB/Python3_SITEARCH/' cmake/SIPMacros.cmake
 %{python3_sitearch}/Arcus.so
 
 %changelog
+* Tue Dec 22 2020 Jan Pazdziora <jpazdziora@redhat.com> - 4.8.0-1
+- Update to 4.8.0
+
 * Wed Sep 23 2020 Adrian Reber <adrian@lisas.de> - 4.7.1-2
 - Rebuilt for protobuf 3.13
 
