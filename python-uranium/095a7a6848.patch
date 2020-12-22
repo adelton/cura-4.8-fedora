@@ -1,0 +1,25 @@
+From 095a7a68482d2fc984f7f8dae1ce67d429e8aff6 Mon Sep 17 00:00:00 2001
+From: Ghostkeeper <rubend@tutanota.com>
+Date: Fri, 30 Oct 2020 17:52:39 +0100
+Subject: [PATCH] Round coordinates before creating QPoint
+
+QPoint only accepts integers. Maybe we'd need QPointF but honestly we probably want to render this just pixel-aligned anyway.
+
+Contributes to issue CURA-7501.
+---
+ UM/Qt/Bindings/PointingRectangle.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/UM/Qt/Bindings/PointingRectangle.py b/UM/Qt/Bindings/PointingRectangle.py
+index a0a79c6a1..64430a632 100644
+--- a/UM/Qt/Bindings/PointingRectangle.py
++++ b/UM/Qt/Bindings/PointingRectangle.py
+@@ -103,7 +103,7 @@ def updatePaintNode(self, paint_node, update_data):
+         vertex_data[5].set(0, 0)
+         vertex_data[6].set(0, 0)
+ 
+-        target_offset = self._target - QPoint(self.x(), self.y())
++        target_offset = self._target - QPoint(round(self.x()), round(self.y()))
+ 
+         arrow_on_side = -1 # no arrow
+         arrow_size = 0
