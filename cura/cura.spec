@@ -1,6 +1,6 @@
 Name:           cura
 Epoch:          1
-Version:        4.7.1
+Version:        4.8.0
 Release:        1%{?dist}
 Summary:        3D printer control software
 
@@ -136,6 +136,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_prefix}/lib/%{name}
 
 %changelog
+* Tue Dec 22 2020 Jan Pazdziora <jpazdziora@redhat.com> - 1:4.8.0-1
+- Update to 4.8.0
+
 * Thu Sep 03 2020 Miro Hrončok <mhroncok@redhat.com> - 1:4.7.1-1
 - Update to 4.7.1
 
