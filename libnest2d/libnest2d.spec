@@ -46,6 +46,7 @@ A library and framework for the 2D bin packaging problem.
 %autosetup -n %{name}-da4782500da4eb8cb6e38e5e3f10164ec5a59778 -p1
 sed -i -e "s/ lib\([^n]\)/ "%{_lib}"\1/" CMakeLists.txt
 
+%global debug_package %{nil}
 %build
 %cmake \
   -DLIBNEST2D_HEADER_ONLY=ON
