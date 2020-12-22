@@ -26,8 +26,8 @@ Source:         https://github.com/tamasmeszaros/libnest2d/archive/da4782500da4e
 Patch0:         Add-disallowed-areas.patch
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
-BuildRequires:  libboost_headers-devel
-BuildRequires:  libpolyclipping-devel
+BuildRequires:  boost-devel
+BuildRequires:  polyclipping-devel
 BuildRequires:  pkgconfig(nlopt)
 
 %description
@@ -35,8 +35,8 @@ A library and framework for the 2D bin packaging problem.
 
 %package devel
 Summary:        Library for the 2D bin packaging problem
-Requires:       libboost_headers-devel
-Requires:       libpolyclipping-devel
+Requires:       boost-devel
+Requires:       polyclipping-devel
 Requires:       pkgconfig(nlopt)
 
 %description devel
