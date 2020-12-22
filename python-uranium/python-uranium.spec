@@ -1,6 +1,6 @@
 Name:           python-uranium
-Version:        4.7.1
-Release:        2%{?dist}
+Version:        4.8.0
+Release:        1%{?dist}
 Summary:        A Python framework for building desktop applications
 License:        LGPLv3+
 URL:            https://github.com/Ultimaker/Uranium
@@ -113,6 +113,9 @@ popd
 
 
 %changelog
+* Tue Dec 22 2020 Jan Pazdziora <jpazdziora@redhat.com> - 4.8.0-1
+- Update to 4.8.0
+
 * Fri Nov 27 2020 Miro Hrončok <mhroncok@redhat.com> - 4.7.1-2
 - Round coordinates before creating QPoint
 - Fixes a test failure with Python 3.10
