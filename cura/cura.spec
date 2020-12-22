@@ -28,6 +28,7 @@ BuildRequires:  python3-uranium == %{version}
 
 Requires:       open-sans-fonts
 Requires:       python3-pyserial
+Requires:       python3-pynest2d
 Requires:       python3-requests
 Requires:       python3-savitar == %{version}
 Requires:       python3-uranium == %{version}
