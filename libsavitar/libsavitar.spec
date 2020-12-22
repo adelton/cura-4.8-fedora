@@ -1,5 +1,5 @@
 Name:           libsavitar
-Version:        4.7.1
+Version:        4.8.0
 Release:        1%{?dist}
 Summary:        C++ implementation of 3mf loading with SIP Python bindings
 License:        LGPLv3+
@@ -91,6 +91,9 @@ export CXXFLAGS="%{optflags} -Wl,--as-needed"
 %{python3_sitearch}/Savitar.so
 
 %changelog
+* Tue Dec 22 2020 Jan Pazdziora <jpazdziora@redhat.com> - 4.8.0-1
+- Update to 4.8.0
+
 * Thu Sep 03 2020 Miro Hrončok <mhroncok@redhat.com> - 4.7.1-1
 - Update to 4.7.1
 
