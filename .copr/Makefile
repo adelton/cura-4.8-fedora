@@ -19,7 +19,7 @@ endif
 srpm:
 	mkdir -p $(outdir)/.sources
 	cp -p $(spec_dir)$(spec_file) $(outdir)/.sources/$(spec_out)
-	cp -p $(spec_dir)*.patch $(outdir)/.sources/
+	cp -p $(spec_dir)*.patch $(outdir)/.sources/ || :
 	rpm -qf /usr/bin/spectool || dnf install -y /usr/bin/spectool
 	cd $(outdir)/.sources && spectool -g $(spec_out)
 	cd $(outdir)/.sources && rpmbuild -D '_srcrpmdir $(outdir)' -D '_sourcedir $(outdir)/.sources' -bs $(outdir)/.sources/$(spec_out)
