@@ -21,7 +21,7 @@ Release:        1.1
 Summary:        Library for the 2D bin packaging problem
 License:        LGPL-3.0-only
 URL:            https://github.com/tamasmeszaros/libnest2d
-Source:         libnest2d-%{version}.tar.gz
+Source:         https://github.com/tamasmeszaros/libnest2d/archive/da4782500da4eb8cb6e38e5e3f10164ec5a59778.tar.gz#/libnest2d-%{version}.tar.gz
 # PATCH-FIX-UPSTREAM -- https://github.com/tamasmeszaros/libnest2d/pull/18
 Patch0:         Add-disallowed-areas.patch
 BuildRequires:  cmake
@@ -43,7 +43,7 @@ Requires:       pkgconfig(nlopt)
 A library and framework for the 2D bin packaging problem.
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-da4782500da4eb8cb6e38e5e3f10164ec5a59778 -p1
 sed -i -e "s/ lib\([^n]\)/ "%{_lib}"\1/" CMakeLists.txt
 
 %build
