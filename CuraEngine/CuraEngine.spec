@@ -1,7 +1,7 @@
 Name:           CuraEngine
 Epoch:          1
-Version:        4.7.1
-Release:        2%{?dist}
+Version:        4.8.0
+Release:        1%{?dist}
 Summary:        Engine for processing 3D models into G-code instructions for 3D printers
 License:        AGPLv3+
 URL:            https://github.com/Ultimaker/%{name}
@@ -64,6 +64,9 @@ sed -i 's/"DEV"/"%{version}"/' src/settings/Settings.h
 %{_bindir}/%{name}
 
 %changelog
+* Wed Dec 23 2020 Jan Pazdziora <jpazdziora@redhat.com> - 4.8.0-1
+- Update to 4.8.0
+
 * Wed Sep 23 2020 Adrian Reber <adrian@lisas.de> - 1:4.7.1-2
 - Rebuilt for protobuf 3.13
 
