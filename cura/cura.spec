@@ -22,6 +22,7 @@ BuildRequires:  git-core
 BuildRequires:  python3-devel
 BuildRequires:  python3-pip
 BuildRequires:  python3-pytest
+BuildRequires:  python3-pynest2d
 BuildRequires:  python3-requests
 BuildRequires:  python3-savitar == %{version}
 BuildRequires:  python3-uranium == %{version}
