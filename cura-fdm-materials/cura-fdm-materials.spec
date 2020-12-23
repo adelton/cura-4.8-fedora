@@ -1,5 +1,5 @@
 Name:           cura-fdm-materials
-Version:        4.7.1
+Version:        4.8.0
 Release:        1%{?dist}
 Summary:        Cura FDM Material database
 
@@ -38,6 +38,9 @@ These files are needed to work with printers like Ultimaker 2+ and Ultimaker 3.
 %{_datadir}/cura/resources/materials/
 
 %changelog
+* Wed Dec 23 2020 Jan Pazdziora <jpazdziora@redhat.com> - 4.8.0-1
+- Update to 4.8.0
+
 * Thu Sep 03 2020 Miro Hrončok <mhroncok@redhat.com> - 4.7.1-1
 - Update to 4.7.1
 
